@@ -116,7 +116,7 @@
         console.log("s")
         var ua = navigator.userAgent;
         var isWeixin = !!/MicroMessenger/i.test(ua);
-        if(isWeixin){// 如果是微信
+        //if(isWeixin){// 如果是微信
             ele.onclick=function(e){
                 window.event? window.event.returnValue = false : e.preventDefault();
                 document.getElementById('JweixinTip').style.display='block';
@@ -124,7 +124,7 @@
             document.getElementById('JweixinTip').onclick=function(){
                 this.style.display='none';
             }
-        }
+        //}
     }
     var btn1 = document.getElementById('divDownload-android');//下载一
     weixinTip(btn1);
