@@ -101,12 +101,14 @@
         }
         if (isIOS) {
 
-            //这个是ios操作系统
-            var a = document.getElementById("a-ios");
-            a.href = "itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist";
-            a.setAttribute("onclick",'');
-            //激发标签点击事件OVER
-            a.click("return false");
+            ////这个是ios操作系统
+            //var a = document.getElementById("a-ios");
+            //a.href = "itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist";
+            //a.setAttribute("onclick",'');
+            ////激发标签点击事件OVER
+            //a.click("return false");
+         
+            window.location = "itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist";
         }
     }
 
