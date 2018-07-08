@@ -34,7 +34,7 @@
         <p class="appdownload-note hidden">点击下面链接下载客户端，查看更多精彩内容!!!</p>
         <!--提示：暂不支持的机型-->
         <div class="appdownload-btns" id="divDownload-ios" style="display: none;">
-                        <!--<a class="btn item-ios" href="https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist" target="_blank">-->
+                        <!--<a class="btn item-ios" href="itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist" target="_blank">-->
                             <a class="btn item-ios" id="a-ios" target="_blank" onClick="my_click()">
                 <span class="ico ico-ios"></span>
                 <span class="txt">iPhone版</span>
@@ -103,7 +103,7 @@
 
             //这个是ios操作系统
             var a = document.getElementById("a-ios");
-            a.href = "https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist";
+            a.href = "itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/q351941406/488679798/master/PropertyList.plist";
             a.setAttribute("onclick",'');
             //激发标签点击事件OVER
             a.click("return false");
