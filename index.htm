@@ -34,14 +34,14 @@
         <p class="appdownload-note hidden">点击下面链接下载客户端，查看更多精彩内容!!!</p>
         <!--提示：暂不支持的机型-->
         <div class="appdownload-btns" id="divDownload-ios" style="display: none;">
-                        <!--<a class="btn item-ios" href="https://itunes.apple.com/cn/app/ci-xi-wang-lun-tan/id1064768220" target="_blank">-->
+                        <!--<a class="btn item-ios" href="https://raw.githubusercontent.com/q351941406/488679798/master/mgm.ipa" target="_blank">-->
                             <a class="btn item-ios" id="a-ios" target="_blank" onClick="my_click()">
                 <span class="ico ico-ios"></span>
                 <span class="txt">iPhone版</span>
             </a>
                                 </div>
         <div class="appdownload-btns" id="divDownload-android" style="display: none;">
-            <!--<a class="btn item-android" href="http://bbs.zxip.com/m/down/cixiwang_35_v3.0.8.apk">-->
+            <!--<a class="btn item-android" href="https://raw.githubusercontent.com/q351941406/488679798/master/mgm_1.1_20180707.apk">-->
             <a class="btn item-android" id="a-android" target="_blank" onClick="my_click()">
                 <span class="ico ico-android"></span>
                 <span class="txt">安卓版</span>
@@ -93,10 +93,8 @@
 
         if (isAndroid) {
             //这个是安卓操作系统
-
-            //这个是ios操作系统
             var a = document.getElementById("a-android");
-            a.href = "http://bbs.zxip.com/m/down/cixiwang_35_v3.0.8.apk";
+            a.href = "https://raw.githubusercontent.com/q351941406/488679798/master/mgm_1.1_20180707.apk";
             a.setAttribute("onclick",'');
             //激发标签点击事件OVER
             a.click("return false");
@@ -105,7 +103,7 @@
 
             //这个是ios操作系统
             var a = document.getElementById("a-ios");
-            a.href = "https://itunes.apple.com/cn/app/ci-xi-wang-lun-tan/id1064768220";
+            a.href = "https://raw.githubusercontent.com/q351941406/488679798/master/mgm.ipa";
             a.setAttribute("onclick",'');
             //激发标签点击事件OVER
             a.click("return false");
